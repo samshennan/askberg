@@ -3,10 +3,12 @@
 **Batch every decision waiting for you into one deep-sea survey. Answer the whole dive on your phone. Paste one block back. Surface.**
 
 <p align="center">
-  <em>The light, easy calls float at the surface. The ones that can sink the ship are down in the dark.</em>
+  <img src="docs/demo.gif" alt="askberg — dive through the decisions waiting on you, then surface" width="760">
 </p>
 
-<p align="center"><sub>🎬 screen-recorded walkthrough coming soon</sub></p>
+<p align="center">
+  <em>The light, reversible calls float at the surface. The ones that end careers are down in the dark.</em>
+</p>
 
 ---
 
@@ -43,6 +45,15 @@ ghosting through the deep. Hit **Copy** and you surface: the berg calves with a 
 the sky clears to sunset, a little boat settles into calm water. *Smooth sailing ahead.*
 
 It's also a single self-contained HTML file with no dependencies, that works on a phone.
+
+<table>
+<tr>
+<td width="50%"><img src="docs/surface.png" alt="The surface — light, reversible decisions"><br><sub><b>The surface.</b> Light, reversible calls in the sunlit shallows.</sub></td>
+<td width="50%"><img src="docs/deep.png" alt="The deep — irreversible, career-limiting calls"><br><sub><b>The deep.</b> The gauge climbs; the ship-sinkers wait in the dark.</sub></td>
+</tr>
+</table>
+
+<p align="center"><img src="docs/surfaced.png" alt="Surfaced — smooth sailing ahead" width="640"><br><sub><b>Copy &rarr; surface.</b> Every call cleared. Smooth sailing ahead.</sub></p>
 
 ## How it works
 
