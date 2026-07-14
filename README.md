@@ -3,13 +3,10 @@
 **Batch every decision waiting for you into one deep-sea survey. Answer the whole dive on your phone. Paste one block back. Surface.**
 
 <p align="center">
-  <!-- TODO: record docs/demo.gif — the dive from the sunlit surface down to the abyss, then the "surfacing" payoff -->
-  <img src="docs/demo.gif" alt="askberg — dive through your open decisions, then surface" width="720">
-</p>
-
-<p align="center">
   <em>The light, easy calls float at the surface. The ones that can sink the ship are down in the dark.</em>
 </p>
+
+<p align="center"><sub>🎬 screen-recorded walkthrough coming soon</sub></p>
 
 ---
 
