@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Example — Sprint Decisions",
+    "date": "2026-01-01",
+    "subtitle": "answer what you can, skip the rest (defaults apply) — the output block at the bottom pastes straight back to the agent",
+    "urgency": { "red": "can sink us", "amber": "needs you this week", "grey": "when convenient" }
+  },
+  "questions": [
+    {
+      "id": "DEP-2",
+      "cluster": "Housekeeping",
+      "urgency": "grey",
+      "question": "Bump the linter to the new major version?",
+      "context": "It flags ~30 new style warnings but no errors, and the fixes are auto-applied. Fully reversible.",
+      "type": "single",
+      "options": [
+        { "value": "bump", "label": "Bump it and run the autofix", "recommended": true },
+        { "value": "hold", "label": "Hold until next sprint" }
+      ],
+      "allowNotes": false
+    },
+    {
+      "id": "REL-1",
+      "cluster": "Launch",
+      "urgency": "amber",
+      "question": "Send the launch email to the beta list?",
+      "context": "Draft is ready; ~800 recipients. SEND-gate: nothing goes out on a default.",
+      "type": "single",
+      "options": [
+        { "value": "send", "label": "Send once I approve the final copy", "recommended": true, "desc": "Draft it, then hold at my yes." },
+        { "value": "wait", "label": "Hold — I want to rewrite it first" }
+      ],
+      "allowNotes": true,
+      "notesHint": "any copy changes before it goes"
+    },
+    {
+      "id": "API-1",
+      "cluster": "Platform",
+      "urgency": "red",
+      "question": "Which API version is canonical for v2 — and is the schema signed off?",
+      "context": "Two variants exist; they differ in the auth shape. Cutting over is a deploy / publish-gate.",
+      "type": "single",
+      "options": [
+        { "value": "v2a", "label": "v2a (token auth) → sign off, cut over", "recommended": true, "desc": "Matches the SDKs already shipped." },
+        { "value": "v2b", "label": "v2b (session auth)", "desc": "Cleaner, but breaks the shipped SDKs." },
+        { "value": "review", "label": "Neither yet — I need to review the schema first" }
+      ],
+      "allowNotes": true,
+      "notesHint": "if you want schema changes, say what"
+    }
+  ]
+}

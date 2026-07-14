@@ -1,0 +1,27 @@
+# askberg config — copy to .askberg.yml in your repo root and edit.
+# Every key is optional; these are the defaults.
+
+# Inline markers the discovery collector greps for. Use as many as you like.
+markers:
+  - "askberg:"
+  - "DECISION:"
+  - "@decision"
+  - "BLOCKED:"
+  - "TODO(decide)"
+
+# Files/dirs to scan for decision-shaped headings and lines
+# (Pending, Blockers, Open questions, Awaiting, Needs decision).
+docPaths:
+  - ".planning"
+  - "TODO.md"
+  - "DECISIONS.md"
+  - "docs/adr"
+
+# Who "assigned to you" / "@me" resolves to for the git + issue collectors.
+owner: "@me"
+
+# Where built decision forms are written (never a bare filename or Downloads).
+outDir: ".planning/decisions"
+
+# Answered forms are disposable; purge them after this many days.
+cleanupDays: 14

@@ -1,0 +1,5 @@
+# askberg runtime output
+.askberg/
+# built decision forms live in the consuming repo, not here
+*.local.*
+node_modules/
